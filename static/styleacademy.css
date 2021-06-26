@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    padding: 2rem 0;
+    font-size: 3rem;
+    font-weight: bold;
+    filter: invert();
+
+}
+p{
+    filter: invert();
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.container{
+    min-height: 100vh;
+    /* margin: 40px 0; */
+    /* background: rgb(12, 4, 4) url('https://source.unsplash.com/1600x900/?dance'); */
+    /* background-size: cover; */
+    background:  url('https://source.unsplash.com/800x800/?dance');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: cover; */
+    /* background-blend-mode: darken; */
+}
+@media(max-width: 1111px)
+{
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width: 900px)
+{
+    html{
+        font-size: 40%;
+    }
+}

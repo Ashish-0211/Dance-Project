@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0.8rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+#logo img{
+    height: 45px;
+}
+#logo:hover{
+    cursor: pointer;
+    text-shadow: 2px 2px 4px  orange;
+}
+#navbar{
+    background-color: rgba(34, 138, 187, 0.685);
+    /* background: url('../static/p_images/dance\ bg.jpg'); */
+    padding: 0.78rem 0.9rem;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 1.5rem;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 0.52rem 1.89rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#navbar li a:hover{
+    color: rgb(90, 6, 6);
+    text-shadow: 2px 2px 4px grey;
+  
+}
+#introSection{
+    background: center / cover no-repeat url('../static/p_images/dance\ bg.jpg');
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding-bottom: 1.9rem;
+    font-family: 'Lobster', cursive;
+    background-color: red;
+    height: 40rem;
+}
+#introSection div.small{
+    font-size: 2.2rem;
+    padding: 0.7rem;
+}
+#missionSection {
+    height: 30rem;
+    background-color: rgb(214, 232, 255);
+    margin: auto;
+}
+#missionSection h2{
+    font-size: 1.5rem;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding-top: 0.8rem ;   
+}
+.card{
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    width: 30%;
+    margin: 1.3rem 1.2rem;
+    display: inline-block;
+    height: 18rem;
+    background-color: rgb(154, 198, 241);
+    /* box-shadow: 10px 10px 5px grey; */
+}
+.card:hover{
+    cursor: pointer;
+    animation: mymove 0s 0s;
+    box-shadow: 10px 10px 5px grey;
+}
+@keyframes mymove{
+    50%{box-shadow: 10px 10px 5px grey;}
+}
+.card h3{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    margin: 0  1.2rem;
+    margin-top: 1.1rem;
+    padding: 0.8rem;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    
+    height: 4rem;
+    padding: 0.8rem;
+    margin: 0.3rem 0.5rem;
+}
+.card-img img{
+    padding: 0.8rem ;
+    height: 8rem;
+    
+}
+.card-content{
+    padding: 0 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.card-content p{
+    font-size: 1.2rem;
+}
+#sponsersSection{
+    height: 25rem;
+    background-color: rgb(212, 247, 248);
+}
+.spimage:hover{
+    cursor: pointer;
+    animation: mymove 0s 0s;
+    box-shadow: 10px 10px 5px grey;
+}
+#sponsersSection h2{
+   font-family: 'Lobster', cursive;
+   font-size: 3.1rem;
+   text-align: center;
+   padding-top: 0.8rem ;  
+}
+#sponsers{
+    height: 8rem;
+    max-width: 90rem;
+    margin: 1.1rem auto;
+}
+.spimage{
+    height: 80%;
+    margin: auto;
+    margin: 7rem;
+    margin-top: 2rem;
+    margin-left: 4.7rem;
+    align-items: center;
+    display: inline-block;
+}
+#footer{
+    font-family: 'Lobster', cursive;
+    height: 3.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+}
+@media(max-width: 1111px)
+{
+   
+    #navbar ul{
+        flex-direction: row;
+    }
+    .card{
+        /* display: flex; */
+        width: 70%;
+        flex-direction: row;
+    }
+    #navbar li a:hover{
+        color: rgb(90, 6, 6);
+        text-shadow: 2px 2px 4px grey;
+    }
+    #missionSection{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 70rem;
+        flex-direction: column;
+        width: 100%;
+    }
+    .spimage{
+       margin: 3.4rem;
+        margin-left: 4.2rem;
+        height: 6rem;
+        display: inline-block;
+    }
+    .card-content{
+        padding: 0 0;
+    }
+    .card:hover{
+        cursor: pointer;
+        animation: mymove 0s 0s;
+        box-shadow: 10px 10px 5px grey;
+    }
+    .spimage:hover{
+        cursor: pointer;
+        animation: mymove 0s 0s;
+        box-shadow: 10px 10px 5px grey;
+    }
+}
+@media(max-width: 900px)
+{
+    html{
+        font-size: 40%;
+    }
+}
